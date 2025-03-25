@@ -1,0 +1,366 @@
+2025-03-25T01:27:00.5893731Z ##[debug]Starting: build
+2025-03-25T01:27:00.5914069Z ##[debug]Cleaning runner temp folder: /home/runner/work/_temp
+2025-03-25T01:27:00.6012944Z ##[debug]Starting: Set up job
+2025-03-25T01:27:00.6014258Z Current runner version: '2.323.0'
+2025-03-25T01:27:00.6038072Z ##[group]Operating System
+2025-03-25T01:27:00.6038872Z Ubuntu
+2025-03-25T01:27:00.6039383Z 24.04.2
+2025-03-25T01:27:00.6039831Z LTS
+2025-03-25T01:27:00.6040336Z ##[endgroup]
+2025-03-25T01:27:00.6040863Z ##[group]Runner Image
+2025-03-25T01:27:00.6041383Z Image: ubuntu-24.04
+2025-03-25T01:27:00.6041934Z Version: 20250316.1.0
+2025-03-25T01:27:00.6042913Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250316.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-03-25T01:27:00.6044636Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.1
+2025-03-25T01:27:00.6045592Z ##[endgroup]
+2025-03-25T01:27:00.6046087Z ##[group]Runner Image Provisioner
+2025-03-25T01:27:00.6046651Z 2.0.422.1
+2025-03-25T01:27:00.6047351Z ##[endgroup]
+2025-03-25T01:27:00.6048378Z ##[group]GITHUB_TOKEN Permissions
+2025-03-25T01:27:00.6050404Z Contents: read
+2025-03-25T01:27:00.6050961Z Metadata: read
+2025-03-25T01:27:00.6051495Z Packages: read
+2025-03-25T01:27:00.6052053Z ##[endgroup]
+2025-03-25T01:27:00.6055364Z Secret source: Actions
+2025-03-25T01:27:00.6056363Z ##[debug]Primary repository: cloudugba/cloudugb
+2025-03-25T01:27:00.6057159Z Prepare workflow directory
+2025-03-25T01:27:00.6125019Z ##[debug]Creating pipeline directory: '/home/runner/work/cloudugb'
+2025-03-25T01:27:00.6128156Z ##[debug]Creating workspace directory: '/home/runner/work/cloudugb/cloudugb'
+2025-03-25T01:27:00.6129664Z ##[debug]Update context data
+2025-03-25T01:27:00.6133177Z ##[debug]Evaluating job-level environment variables
+2025-03-25T01:27:00.6355921Z ##[debug]Evaluating job container
+2025-03-25T01:27:00.6359540Z ##[debug]Evaluating job service containers
+2025-03-25T01:27:00.6361946Z ##[debug]Evaluating job defaults
+2025-03-25T01:27:00.6386485Z Prepare all required actions
+2025-03-25T01:27:00.6422555Z Getting action download info
+2025-03-25T01:27:01.1747874Z ##[group]Download immutable action package 'actions/checkout@v4'
+2025-03-25T01:27:01.1748904Z Version: 4.2.2
+2025-03-25T01:27:01.1749903Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-03-25T01:27:01.1751111Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-03-25T01:27:01.1751799Z ##[endgroup]
+2025-03-25T01:27:01.1777439Z ##[debug]Copied action archive '/opt/actionarchivecache/actions_checkout/11bd71901bbe5b1630ceea73d27597364c9af683.tar.gz' to '/home/runner/work/_actions/_temp_5c7cf146-a700-473a-a687-7a1a2c79463f/133a9689-a213-4b82-8b48-47b2e6acc8ef.tar.gz'
+2025-03-25T01:27:01.2460373Z ##[debug]Unwrap 'actions-checkout-11bd719' to '/home/runner/work/_actions/actions/checkout/v4'
+2025-03-25T01:27:01.2598856Z ##[debug]Archive '/home/runner/work/_actions/_temp_5c7cf146-a700-473a-a687-7a1a2c79463f/133a9689-a213-4b82-8b48-47b2e6acc8ef.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/checkout/v4'.
+2025-03-25T01:27:01.2707853Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/checkout/v4/action.yml'.
+2025-03-25T01:27:01.3432116Z ##[debug]Set step '__actions_checkout' display name to: 'Run actions/checkout@v4'
+2025-03-25T01:27:01.3435124Z ##[debug]Set step '__run' display name to: 'Run a multiple-line script'
+2025-03-25T01:27:01.3436674Z ##[debug]Set step '__run_2' display name to: 'Run a multi-line script'
+2025-03-25T01:27:01.3437366Z Complete job name: build
+2025-03-25T01:27:01.3454598Z ##[debug]Collect running processes for tracking orphan processes.
+2025-03-25T01:27:01.3671474Z ##[debug]Finishing: Set up job
+2025-03-25T01:27:01.3788289Z ##[debug]Evaluating condition for step: 'Run actions/checkout@v4'
+2025-03-25T01:27:01.3825148Z ##[debug]Evaluating: success()
+2025-03-25T01:27:01.3830241Z ##[debug]Evaluating success:
+2025-03-25T01:27:01.3845552Z ##[debug]=> true
+2025-03-25T01:27:01.3851598Z ##[debug]Result: true
+2025-03-25T01:27:01.3874907Z ##[debug]Starting: Run actions/checkout@v4
+2025-03-25T01:27:01.3942268Z ##[debug]Register post job cleanup for action: actions/checkout@v4
+2025-03-25T01:27:01.4017510Z ##[debug]Loading inputs
+2025-03-25T01:27:01.4025707Z ##[debug]Evaluating: github.repository
+2025-03-25T01:27:01.4026842Z ##[debug]Evaluating Index:
+2025-03-25T01:27:01.4028839Z ##[debug]..Evaluating github:
+2025-03-25T01:27:01.4030343Z ##[debug]..=> Object
+2025-03-25T01:27:01.4036111Z ##[debug]..Evaluating String:
+2025-03-25T01:27:01.4036955Z ##[debug]..=> 'repository'
+2025-03-25T01:27:01.4040883Z ##[debug]=> 'cloudugba/cloudugb'
+2025-03-25T01:27:01.4042379Z ##[debug]Result: 'cloudugba/cloudugb'
+2025-03-25T01:27:01.4045710Z ##[debug]Evaluating: github.token
+2025-03-25T01:27:01.4046247Z ##[debug]Evaluating Index:
+2025-03-25T01:27:01.4046752Z ##[debug]..Evaluating github:
+2025-03-25T01:27:01.4047260Z ##[debug]..=> Object
+2025-03-25T01:27:01.4047728Z ##[debug]..Evaluating String:
+2025-03-25T01:27:01.4048217Z ##[debug]..=> 'token'
+2025-03-25T01:27:01.4049247Z ##[debug]=> '***'
+2025-03-25T01:27:01.4049861Z ##[debug]Result: '***'
+2025-03-25T01:27:01.4064021Z ##[debug]Loading env
+2025-03-25T01:27:01.4123846Z ##[group]Run actions/checkout@v4
+2025-03-25T01:27:01.4124567Z with:
+2025-03-25T01:27:01.4124956Z   repository: cloudugba/cloudugb
+2025-03-25T01:27:01.4125580Z   token: ***
+2025-03-25T01:27:01.4125945Z   ssh-strict: true
+2025-03-25T01:27:01.4126312Z   ssh-user: git
+2025-03-25T01:27:01.4126703Z   persist-credentials: true
+2025-03-25T01:27:01.4127133Z   clean: true
+2025-03-25T01:27:01.4127526Z   sparse-checkout-cone-mode: true
+2025-03-25T01:27:01.4127982Z   fetch-depth: 1
+2025-03-25T01:27:01.4128357Z   fetch-tags: false
+2025-03-25T01:27:01.4128753Z   show-progress: true
+2025-03-25T01:27:01.4129148Z   lfs: false
+2025-03-25T01:27:01.4129500Z   submodules: false
+2025-03-25T01:27:01.4129886Z   set-safe-directory: true
+2025-03-25T01:27:01.4130806Z ##[endgroup]
+2025-03-25T01:27:01.5868240Z ##[debug]GITHUB_WORKSPACE = '/home/runner/work/cloudugb/cloudugb'
+2025-03-25T01:27:01.5870384Z ##[debug]qualified repository = 'cloudugba/cloudugb'
+2025-03-25T01:27:01.5871999Z ##[debug]ref = 'refs/heads/main'
+2025-03-25T01:27:01.5873703Z ##[debug]commit = '3342a7dcd80f60157417d1f5b9f688eb8876fdb5'
+2025-03-25T01:27:01.5875313Z ##[debug]clean = true
+2025-03-25T01:27:01.5876565Z ##[debug]filter = undefined
+2025-03-25T01:27:01.5877867Z ##[debug]fetch depth = 1
+2025-03-25T01:27:01.5879116Z ##[debug]fetch tags = false
+2025-03-25T01:27:01.5880384Z ##[debug]show progress = true
+2025-03-25T01:27:01.5881691Z ##[debug]lfs = false
+2025-03-25T01:27:01.5882873Z ##[debug]submodules = false
+2025-03-25T01:27:01.5884434Z ##[debug]recursive submodules = false
+2025-03-25T01:27:01.5885853Z ##[debug]GitHub Host URL = 
+2025-03-25T01:27:01.5888167Z ::add-matcher::/home/runner/work/_actions/actions/checkout/v4/dist/problem-matcher.json
+2025-03-25T01:27:01.5967085Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+2025-03-25T01:27:01.5972354Z Syncing repository: cloudugba/cloudugb
+2025-03-25T01:27:01.5974013Z ::group::Getting Git version info
+2025-03-25T01:27:01.5975476Z ##[group]Getting Git version info
+2025-03-25T01:27:01.5976246Z Working directory is '/home/runner/work/cloudugb/cloudugb'
+2025-03-25T01:27:01.5977357Z ##[debug]Getting git version
+2025-03-25T01:27:01.5977838Z [command]/usr/bin/git version
+2025-03-25T01:27:01.6020767Z git version 2.48.1
+2025-03-25T01:27:01.6048253Z ##[debug]0
+2025-03-25T01:27:01.6048994Z ##[debug]git version 2.48.1
+2025-03-25T01:27:01.6049420Z ##[debug]
+2025-03-25T01:27:01.6050622Z ##[debug]Set git useragent to: git/2.48.1 (github-actions-checkout)
+2025-03-25T01:27:01.6053292Z ::endgroup::
+2025-03-25T01:27:01.6054001Z ##[endgroup]
+2025-03-25T01:27:01.6057500Z ::add-mask::***
+2025-03-25T01:27:01.6065142Z Temporarily overriding HOME='/home/runner/work/_temp/e8f82dfb-d5a8-4b98-b6ee-d3a9d2679ad9' before making global git config changes
+2025-03-25T01:27:01.6070677Z Adding repository directory to the temporary git global config as a safe directory
+2025-03-25T01:27:01.6072072Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloudugb/cloudugb
+2025-03-25T01:27:01.6103461Z ##[debug]0
+2025-03-25T01:27:01.6104378Z ##[debug]
+2025-03-25T01:27:01.6108525Z Deleting the contents of '/home/runner/work/cloudugb/cloudugb'
+2025-03-25T01:27:01.6112168Z ::group::Initializing the repository
+2025-03-25T01:27:01.6112750Z ##[group]Initializing the repository
+2025-03-25T01:27:01.6116624Z [command]/usr/bin/git init /home/runner/work/cloudugb/cloudugb
+2025-03-25T01:27:01.6188217Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-03-25T01:27:01.6189587Z hint: is subject to change. To configure the initial branch name to use in all
+2025-03-25T01:27:01.6190489Z hint: of your new repositories, which will suppress this warning, call:
+2025-03-25T01:27:01.6191618Z hint:
+2025-03-25T01:27:01.6192388Z hint: 	git config --global init.defaultBranch <name>
+2025-03-25T01:27:01.6193393Z hint:
+2025-03-25T01:27:01.6194790Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-03-25T01:27:01.6196190Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-03-25T01:27:01.6196877Z hint:
+2025-03-25T01:27:01.6197251Z hint: 	git branch -m <name>
+2025-03-25T01:27:01.6197948Z Initialized empty Git repository in /home/runner/work/cloudugb/cloudugb/.git/
+2025-03-25T01:27:01.6200687Z ##[debug]0
+2025-03-25T01:27:01.6201679Z ##[debug]Initialized empty Git repository in /home/runner/work/cloudugb/cloudugb/.git/
+2025-03-25T01:27:01.6202406Z ##[debug]
+2025-03-25T01:27:01.6206323Z [command]/usr/bin/git remote add origin https://github.com/cloudugba/cloudugb
+2025-03-25T01:27:01.6237382Z ##[debug]0
+2025-03-25T01:27:01.6238224Z ##[debug]
+2025-03-25T01:27:01.6238983Z ::endgroup::
+2025-03-25T01:27:01.6239404Z ##[endgroup]
+2025-03-25T01:27:01.6240127Z ::group::Disabling automatic garbage collection
+2025-03-25T01:27:01.6240753Z ##[group]Disabling automatic garbage collection
+2025-03-25T01:27:01.6241990Z [command]/usr/bin/git config --local gc.auto 0
+2025-03-25T01:27:01.6269573Z ##[debug]0
+2025-03-25T01:27:01.6270354Z ##[debug]
+2025-03-25T01:27:01.6270958Z ::endgroup::
+2025-03-25T01:27:01.6271317Z ##[endgroup]
+2025-03-25T01:27:01.6271981Z ::group::Setting up auth
+2025-03-25T01:27:01.6272543Z ##[group]Setting up auth
+2025-03-25T01:27:01.6277382Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-03-25T01:27:01.6300970Z ##[debug]1
+2025-03-25T01:27:01.6301578Z ##[debug]
+2025-03-25T01:27:01.6307571Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-03-25T01:27:01.6613745Z ##[debug]0
+2025-03-25T01:27:01.6614928Z ##[debug]
+2025-03-25T01:27:01.6620198Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-03-25T01:27:01.6647921Z ##[debug]1
+2025-03-25T01:27:01.6648933Z ##[debug]
+2025-03-25T01:27:01.6653303Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-03-25T01:27:01.6897263Z ##[debug]0
+2025-03-25T01:27:01.6898429Z ##[debug]
+2025-03-25T01:27:01.6907531Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-03-25T01:27:01.6939135Z ##[debug]0
+2025-03-25T01:27:01.6940267Z ##[debug]
+2025-03-25T01:27:01.6949363Z ::endgroup::
+2025-03-25T01:27:01.6950020Z ##[endgroup]
+2025-03-25T01:27:01.6953081Z ::group::Fetching the repository
+2025-03-25T01:27:01.6954257Z ##[group]Fetching the repository
+2025-03-25T01:27:01.6961175Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +3342a7dcd80f60157417d1f5b9f688eb8876fdb5:refs/remotes/origin/main
+2025-03-25T01:27:02.2112594Z From https://github.com/cloudugba/cloudugb
+2025-03-25T01:27:02.2114350Z  * [new ref]         3342a7dcd80f60157417d1f5b9f688eb8876fdb5 -> origin/main
+2025-03-25T01:27:02.2136683Z ##[debug]0
+2025-03-25T01:27:02.2137913Z ##[debug]
+2025-03-25T01:27:02.2138615Z ::endgroup::
+2025-03-25T01:27:02.2139051Z ##[endgroup]
+2025-03-25T01:27:02.2140081Z ::group::Determining the checkout info
+2025-03-25T01:27:02.2140874Z ##[group]Determining the checkout info
+2025-03-25T01:27:02.2141708Z ::endgroup::
+2025-03-25T01:27:02.2142094Z ##[endgroup]
+2025-03-25T01:27:02.2145943Z [command]/usr/bin/git sparse-checkout disable
+2025-03-25T01:27:02.2182098Z ##[debug]0
+2025-03-25T01:27:02.2183047Z ##[debug]
+2025-03-25T01:27:02.2186374Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-03-25T01:27:02.2212358Z ##[debug]0
+2025-03-25T01:27:02.2213229Z ##[debug]
+2025-03-25T01:27:02.2214159Z ::group::Checking out the ref
+2025-03-25T01:27:02.2214706Z ##[group]Checking out the ref
+2025-03-25T01:27:02.2216592Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-03-25T01:27:02.2260190Z Switched to a new branch 'main'
+2025-03-25T01:27:02.2263827Z branch 'main' set up to track 'origin/main'.
+2025-03-25T01:27:02.2268723Z ##[debug]0
+2025-03-25T01:27:02.2283077Z ##[debug]branch 'main' set up to track 'origin/main'.
+2025-03-25T01:27:02.2284204Z ##[debug]
+2025-03-25T01:27:02.2285281Z ::endgroup::
+2025-03-25T01:27:02.2285866Z ##[endgroup]
+2025-03-25T01:27:02.2305409Z ##[debug]0
+2025-03-25T01:27:02.2306864Z ##[debug]commit 3342a7dcd80f60157417d1f5b9f688eb8876fdb5
+2025-03-25T01:27:02.2307948Z ##[debug]Author: Test <ugbamoses0@gmail.com>
+2025-03-25T01:27:02.2309004Z ##[debug]Date:   Sun Mar 23 12:33:19 2025 -0400
+2025-03-25T01:27:02.2309919Z ##[debug]
+2025-03-25T01:27:02.2310565Z ##[debug]    cloudugba.yml (#2)
+2025-03-25T01:27:02.2311342Z ##[debug]    
+2025-03-25T01:27:02.2312237Z ##[debug]    # This is a basic workflow to help you get started with Actions
+2025-03-25T01:27:02.2313376Z ##[debug]    
+2025-03-25T01:27:02.2314236Z ##[debug]    name: UGBA-CI
+2025-03-25T01:27:02.2314947Z ##[debug]    
+2025-03-25T01:27:02.2315658Z ##[debug]    # Controls when the workflow will run
+2025-03-25T01:27:02.2316621Z ##[debug]    on:
+2025-03-25T01:27:02.2317817Z ##[debug]      # Triggers the workflow on push or pull request events but only for the "main" branch
+2025-03-25T01:27:02.2319236Z ##[debug]      push:
+2025-03-25T01:27:02.2319921Z ##[debug]        branches: [ "main" ]
+2025-03-25T01:27:02.2320817Z ##[debug]      pull_request:
+2025-03-25T01:27:02.2321635Z ##[debug]        branches: [ "main" ]
+2025-03-25T01:27:02.2322466Z ##[debug]    
+2025-03-25T01:27:02.2323394Z ##[debug]      # Allows you to run this workflow manually from the Actions tab
+2025-03-25T01:27:02.2324793Z ##[debug]      workflow_dispatch:
+2025-03-25T01:27:02.2325621Z ##[debug]    
+2025-03-25T01:27:02.2326865Z ##[debug]    # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+2025-03-25T01:27:02.2328486Z ##[debug]    jobs:
+2025-03-25T01:27:02.2329501Z ##[debug]      # This workflow contains a single job called "build"
+2025-03-25T01:27:02.2330728Z ##[debug]      build:
+2025-03-25T01:27:02.2331685Z ##[debug]        # The type of runner that the job will run on
+2025-03-25T01:27:02.2332895Z ##[debug]        runs-on: ubuntu-latest
+2025-03-25T01:27:02.2334279Z ##[debug]    
+2025-03-25T01:27:02.2335567Z ##[debug]        # Steps represent a sequence of tasks that will be executed as part of the job
+2025-03-25T01:27:02.2337189Z ##[debug]        steps:
+2025-03-25T01:27:02.2338584Z ##[debug]          # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+2025-03-25T01:27:02.2340666Z ##[debug]          - uses: actions/checkout@v4
+2025-03-25T01:27:02.2341733Z ##[debug]    
+2025-03-25T01:27:02.2342616Z ##[debug]          # Runs a single command using the runners shell
+2025-03-25T01:27:02.2344259Z ##[debug]          - name: Run a multiple-line script
+2025-03-25T01:27:02.2345412Z ##[debug]            run: echo ugba, world!
+2025-03-25T01:27:02.2346728Z ##[debug]    
+2025-03-25T01:27:02.2347568Z ##[debug]          # Runs a set of commands using the runners shell
+2025-03-25T01:27:02.2348777Z ##[debug]          - name: Run a multi-line script
+2025-03-25T01:27:02.2349809Z ##[debug]            run: |
+2025-03-25T01:27:02.2350675Z ##[debug]              echo Add other actions to build,
+2025-03-25T01:27:02.2351826Z ##[debug]              echo test, and deploy your project.
+2025-03-25T01:27:02.2352819Z ##[debug]
+2025-03-25T01:27:02.2353820Z [command]/usr/bin/git log -1 --format=%H
+2025-03-25T01:27:02.2354858Z 3342a7dcd80f60157417d1f5b9f688eb8876fdb5
+2025-03-25T01:27:02.2356336Z ##[debug]0
+2025-03-25T01:27:02.2357502Z ##[debug]3342a7dcd80f60157417d1f5b9f688eb8876fdb5
+2025-03-25T01:27:02.2358471Z ##[debug]
+2025-03-25T01:27:02.2359582Z ##[debug]Unsetting HOME override
+2025-03-25T01:27:02.2363866Z ::remove-matcher owner=checkout-git::
+2025-03-25T01:27:02.2377709Z ##[debug]Removed matchers: 'checkout-git'
+2025-03-25T01:27:02.2426300Z ##[debug]Node Action run completed with exit code 0
+2025-03-25T01:27:02.2460593Z ##[debug]Save intra-action state isPost = true
+2025-03-25T01:27:02.2461444Z ##[debug]Save intra-action state setSafeDirectory = true
+2025-03-25T01:27:02.2462463Z ##[debug]Save intra-action state repositoryPath = /home/runner/work/cloudugb/cloudugb
+2025-03-25T01:27:02.2467076Z ##[debug]Set output commit = 3342a7dcd80f60157417d1f5b9f688eb8876fdb5
+2025-03-25T01:27:02.2468319Z ##[debug]Set output ref = refs/heads/main
+2025-03-25T01:27:02.2473943Z ##[debug]Finishing: Run actions/checkout@v4
+2025-03-25T01:27:02.2490925Z ##[debug]Evaluating condition for step: 'Run a multiple-line script'
+2025-03-25T01:27:02.2493968Z ##[debug]Evaluating: success()
+2025-03-25T01:27:02.2494704Z ##[debug]Evaluating success:
+2025-03-25T01:27:02.2495505Z ##[debug]=> true
+2025-03-25T01:27:02.2496165Z ##[debug]Result: true
+2025-03-25T01:27:02.2497230Z ##[debug]Starting: Run a multiple-line script
+2025-03-25T01:27:02.2511405Z ##[debug]Loading inputs
+2025-03-25T01:27:02.2525969Z ##[debug]Loading env
+2025-03-25T01:27:02.2544347Z ##[group]Run echo ugba, world!
+2025-03-25T01:27:02.2545059Z [36;1mecho ugba, world![0m
+2025-03-25T01:27:02.2597455Z shell: /usr/bin/bash -e {0}
+2025-03-25T01:27:02.2597981Z ##[endgroup]
+2025-03-25T01:27:02.2665110Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/b4e8c621-9dd2-40d6-a24b-fcfd27ce229f.sh
+2025-03-25T01:27:02.2689882Z ugba, world!
+2025-03-25T01:27:02.2699271Z ##[debug]Finishing: Run a multiple-line script
+2025-03-25T01:27:02.2711243Z ##[debug]Evaluating condition for step: 'Run a multi-line script'
+2025-03-25T01:27:02.2713307Z ##[debug]Evaluating: success()
+2025-03-25T01:27:02.2714250Z ##[debug]Evaluating success:
+2025-03-25T01:27:02.2714983Z ##[debug]=> true
+2025-03-25T01:27:02.2715663Z ##[debug]Result: true
+2025-03-25T01:27:02.2716543Z ##[debug]Starting: Run a multi-line script
+2025-03-25T01:27:02.2727201Z ##[debug]Loading inputs
+2025-03-25T01:27:02.2728602Z ##[debug]Loading env
+2025-03-25T01:27:02.2735788Z ##[group]Run echo Add other actions to build,
+2025-03-25T01:27:02.2736454Z [36;1mecho Add other actions to build,[0m
+2025-03-25T01:27:02.2737099Z [36;1mecho test, and deploy your project.[0m
+2025-03-25T01:27:02.2780957Z shell: /usr/bin/bash -e {0}
+2025-03-25T01:27:02.2781474Z ##[endgroup]
+2025-03-25T01:27:02.2827796Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/3a9784e6-dca2-4de0-8f51-b10ce50fae4b.sh
+2025-03-25T01:27:02.2849132Z Add other actions to build,
+2025-03-25T01:27:02.2849893Z test, and deploy your project.
+2025-03-25T01:27:02.2856200Z ##[debug]Finishing: Run a multi-line script
+2025-03-25T01:27:02.2869844Z ##[debug]Evaluating condition for step: 'Post Run actions/checkout@v4'
+2025-03-25T01:27:02.2872880Z ##[debug]Evaluating: always()
+2025-03-25T01:27:02.2873886Z ##[debug]Evaluating always:
+2025-03-25T01:27:02.2875147Z ##[debug]=> true
+2025-03-25T01:27:02.2876042Z ##[debug]Result: true
+2025-03-25T01:27:02.2877067Z ##[debug]Starting: Post Run actions/checkout@v4
+2025-03-25T01:27:02.2938357Z ##[debug]Loading inputs
+2025-03-25T01:27:02.2939990Z ##[debug]Evaluating: github.repository
+2025-03-25T01:27:02.2940601Z ##[debug]Evaluating Index:
+2025-03-25T01:27:02.2941115Z ##[debug]..Evaluating github:
+2025-03-25T01:27:02.2941634Z ##[debug]..=> Object
+2025-03-25T01:27:02.2942096Z ##[debug]..Evaluating String:
+2025-03-25T01:27:02.2942627Z ##[debug]..=> 'repository'
+2025-03-25T01:27:02.2943165Z ##[debug]=> 'cloudugba/cloudugb'
+2025-03-25T01:27:02.2943976Z ##[debug]Result: 'cloudugba/cloudugb'
+2025-03-25T01:27:02.2946804Z ##[debug]Evaluating: github.token
+2025-03-25T01:27:02.2947416Z ##[debug]Evaluating Index:
+2025-03-25T01:27:02.2947927Z ##[debug]..Evaluating github:
+2025-03-25T01:27:02.2948439Z ##[debug]..=> Object
+2025-03-25T01:27:02.2948944Z ##[debug]..Evaluating String:
+2025-03-25T01:27:02.2949480Z ##[debug]..=> 'token'
+2025-03-25T01:27:02.2950245Z ##[debug]=> '***'
+2025-03-25T01:27:02.2950890Z ##[debug]Result: '***'
+2025-03-25T01:27:02.2969109Z ##[debug]Loading env
+2025-03-25T01:27:02.2976163Z Post job cleanup.
+2025-03-25T01:27:02.3887780Z ##[debug]Getting git version
+2025-03-25T01:27:02.3901959Z [command]/usr/bin/git version
+2025-03-25T01:27:02.3941207Z git version 2.48.1
+2025-03-25T01:27:02.3964474Z ##[debug]0
+2025-03-25T01:27:02.3965313Z ##[debug]git version 2.48.1
+2025-03-25T01:27:02.3966059Z ##[debug]
+2025-03-25T01:27:02.3967160Z ##[debug]Set git useragent to: git/2.48.1 (github-actions-checkout)
+2025-03-25T01:27:02.4033206Z ::add-mask::***
+2025-03-25T01:27:02.4037207Z Temporarily overriding HOME='/home/runner/work/_temp/73dea703-fe6b-4758-882f-cdb28b02395f' before making global git config changes
+2025-03-25T01:27:02.4039918Z Adding repository directory to the temporary git global config as a safe directory
+2025-03-25T01:27:02.4042123Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloudugb/cloudugb
+2025-03-25T01:27:02.4044615Z ##[debug]0
+2025-03-25T01:27:02.4045717Z ##[debug]
+2025-03-25T01:27:02.4046864Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-03-25T01:27:02.4059575Z ##[debug]1
+2025-03-25T01:27:02.4060266Z ##[debug]
+2025-03-25T01:27:02.4067322Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-03-25T01:27:02.4294911Z ##[debug]0
+2025-03-25T01:27:02.4296314Z ##[debug]
+2025-03-25T01:27:02.4302863Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-03-25T01:27:02.4323742Z http.https://github.com/.cloudugb
+2025-03-25T01:27:02.4330491Z ##[debug]0
+2025-03-25T01:27:02.4331295Z ##[debug]http.https://github.com/.checkout
+2025-03-25T01:27:02.4331931Z ##[debug]
+2025-03-25T01:27:02.4336925Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.call
+2025-03-25T01:27:02.4363130Z ##[debug]0
+2025-03-25T01:27:02.4364112Z ##[debug]
+2025-03-25T01:27:02.4369213Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-03-25T01:27:02.4592343Z ##[debug]0
+2025-03-25T01:27:02.4593428Z ##[debug]
+2025-03-25T01:27:02.4594381Z ##[debug]Unsetting HOME override
+2025-03-25T01:27:02.4656796Z ##[debug]Node Action run completed with exit code 0
+2025-03-25T01:27:02.4660553Z ##[debug]Finishing: Post Run actions/checkout@v4
+2025-03-25T01:27:02.4707722Z ##[debug]Starting: Complete job
+2025-03-25T01:27:02.4710047Z Uploading runner diagnostic logs
+2025-03-25T01:27:02.4722022Z ##[debug]Starting diagnostic file upload.
+2025-03-25T01:27:02.4722702Z ##[debug]Setting up diagnostic log folders.
+2025-03-25T01:27:02.4725644Z ##[debug]Creating diagnostic log files folder.
+2025-03-25T01:27:02.4734816Z ##[debug]Copying 1 worker diagnostic logs.
+2025-03-25T01:27:02.4743383Z ##[debug]Copying 1 runner diagnostic logs.
+2025-03-25T01:27:02.4745420Z ##[debug]Zipping diagnostic files.
+2025-03-25T01:27:02.4814576Z ##[debug]Uploading diagnostic metadata file.
+2025-03-25T01:27:02.4844432Z ##[debug]Diagnostic file upload complete.
+2025-03-25T01:27:02.4845425Z Completed runner diagnostic log upload
+2025-03-25T01:27:02.4846018Z Cleaning up orphan processes
+2025-03-25T01:27:02.5171855Z ##[debug]Finishing: Complete job
+2025-03-25T01:27:02.5207901Z ##[debug]Finishing: build
