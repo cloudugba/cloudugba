@@ -197,3 +197,11 @@ contract Rokda is PausableToken {
         emit Transfer(address(0), account, amount);
     }
 }
+version: 2
+updates:
+  - package-ecosystem: "npm" # Change to your package manager (e.g., pip, maven, gradle)
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "weekly"
+Authorization: Bearer YOUR_PERSONAL_ACCESS_TOKEN
+Accept: application/vnd.github.v3+json
